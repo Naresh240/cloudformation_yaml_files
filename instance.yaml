@@ -1,0 +1,9 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: Create ec2 instance with CloudFormation
+
+Resources:
+  ec2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-0dfcb1ef8550277af # ImageID valid only in us-east-1 region
+      InstanceType: t2.micro
